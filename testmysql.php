@@ -36,12 +36,12 @@ echo '<h1>论文列表</h1>';
 // $result = mysql_query("select * from papers",$conn);
 $result = mysql_query("select `number`,`title`,`authors` from papers",$conn);
 // echo " ".$result;
-echo "<table border = 0><tr>";
+echo "<table border = 0 frame =below><tr>";
 
 // while($field = mysql_fetch_field($result)){
 // 	echo "<td>&nbsp;".$field->name."&nbsp;</td>";
 // }
-echo "<td>&nbsp;序号&nbsp;</td>";
+echo "<td width=50px>&nbsp;序号&nbsp;</td>";
 echo "<td>&nbsp;题目&nbsp;</td>";
 echo "<td>&nbsp;作者&nbsp;</td>";
 echo "</tr>";
@@ -55,7 +55,7 @@ while($row = mysql_fetch_row($result)){
 		}
 		
 	}
-	echo "<td>&nbsp;<a href= details.php?id=".$row[0].">"."删除按钮"."</a>&nbsp;</td>";
+	echo "<td width=75px>&nbsp;<a href= details.php?id=".$row[0].">"."删除按钮"."</a>&nbsp;</td>";
 	//删除按钮功能未完成
 	echo "</tr>";
 }
