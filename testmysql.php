@@ -53,8 +53,11 @@ while($row = mysql_fetch_row($result)){
 		}else {
 			echo "<td>&nbsp;".$row[$i]."&nbsp;</td>";
 		}
-	
+		
 	}
+	echo "<td>&nbsp;<a href= details.php?id=".$row[0].">"."删除按钮"."</a>&nbsp;</td>";
+	//删除按钮功能未完成
+	echo "</tr>";
 }
 
 
