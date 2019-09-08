@@ -38,7 +38,7 @@ while($row = mysql_fetch_row($result)){
 	for($i=0;$i<count($row);$i++){
         echo "<tr> <td>&nbsp;".$detail[$i]."&nbsp;</td>";
 		if ($i == 8) {
-			echo "<td>&nbsp;<a href= ".$row[$i]." target = '_blank'>点此下载"."</a>&nbsp;</td> </tr>";
+			echo "<td>&nbsp;<a href= ".$row[$i]." target = '_blank'>点此跳转到下载页"."</a>&nbsp;</td> </tr>";
 		}else {
 			echo "<td>&nbsp;".$row[$i]."&nbsp;</td> </tr>";
         }
